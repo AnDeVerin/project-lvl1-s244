@@ -1,0 +1,25 @@
+{
+  "name": "brain-games",
+  "version": "1.0.0",
+  "description": "project 1 (brain-games) at hexlet.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AnDeVerin/project-lvl1-s244.git"
+  },
+  "author": "Andrey Vershinin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnDeVerin/project-lvl1-s244/issues"
+  },
+  "homepage": "https://github.com/AnDeVerin/project-lvl1-s244#readme",
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*"
+  } 
+}
