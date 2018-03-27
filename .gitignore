@@ -1,8 +1,8 @@
 # Dependency directories
 node_modules/
 
-#Build directory
-build/
+#Output directory
+dist/
 
 #Log files
 *.log
