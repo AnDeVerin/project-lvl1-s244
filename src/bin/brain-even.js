@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { brainEvenGame } from '../';
+import gameEngine from '../';
+import data from '../games/even';
 
-console.log('Welcome to the Brain Games!');
-brainEvenGame();
+gameEngine(data);

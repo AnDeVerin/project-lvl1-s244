@@ -1,37 +1,35 @@
 import readlineSync from 'readline-sync';
 
-export const greetUser = () => {
+const getUserName = () => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
   return userName;
 };
 
-const askAndCheck = (userName) => {
-  const randomNum = Math.floor(Math.random() * Math.floor(100));
-  const isEven = (randomNum % 2 === 0);
-  console.log(`Question: ${randomNum}`);
-  const answer = readlineSync.question('Your answer: ');
+export default (getGameData) => {
+  console.log('Welcome to the Brain Games!\n');
+  const userName = getUserName();
+  if (!getGameData) return;
 
-  const isAnswerRight = (isEven && answer === 'yes') || (!isEven && answer === 'no');
-  if (isAnswerRight) {
-    console.log('Correct!');
-  } else {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isEven ? 'yes' : 'no'}'.`);
-    console.log(`Let's try again, ${userName}!`);
-  }
-  return isAnswerRight;
-};
+  const game = getGameData();
+  console.log(`${game.title}\n`);
 
-export const brainEvenGame = () => {
-  console.log('Answer "yes" if number even otherwise answer "no".\n');
-  const userName = greetUser();
-  let result;
-  for (let i = 0; i < 3; i += 1) {
-    result = askAndCheck(userName);
-    if (!result) break;
+  let isResRight;
+  for (let i = 0, l = game.data.length; i < l; i += 1) {
+    console.log(`Question: ${game.data[i].question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    isResRight = userAnswer === game.data[i].answer;
+
+    if (isResRight) {
+      console.log('Correct!');
+    } else {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${game.data[i].answer}'.`);
+      console.log(`Let's try again, ${userName}!`);
+      break;
+    }
   }
 
-  if (result) {
+  if (isResRight) {
     console.log(`Congratulations, ${userName}!\n`);
   }
 };
