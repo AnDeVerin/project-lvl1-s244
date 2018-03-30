@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import gameEngine from '../';
-import data from '../games/even';
+import gameEven from '../games/even';
 
-gameEngine(data);
+gameEven();

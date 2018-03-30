@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import gameEngine from '../';
+import { getUserName } from '../';
 
-gameEngine();
+console.log('Welcome to the Brain Games!\n');
+getUserName();
