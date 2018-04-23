@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/AnDeVerin/project-lvl1-s244.svg?branch=master)](https://travis-ci.org/AnDeVerin/project-lvl1-s244)
 
 
-Учебный проект [@hexlet.io](https://ru.hexlet.io/projects)  
+[Мой учебный проект @hexlet.io](https://ru.hexlet.io/u/andeverin)  
 
 ## Проект Brain Games / Фронтенд JS-программист
 ### Уровень: 1. Старт проекта 26 марта 2018
