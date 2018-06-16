@@ -1,3 +1,5 @@
+[Мой профиль @hexlet.io](https://ru.hexlet.io/u/andeverin)  
+
 # adv-hexlet-1
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
@@ -5,7 +7,7 @@
 [![Build Status](https://travis-ci.org/AnDeVerin/project-lvl1-s244.svg?branch=master)](https://travis-ci.org/AnDeVerin/project-lvl1-s244)
 
 
-[Мой учебный проект @hexlet.io](https://ru.hexlet.io/u/andeverin)  
+
 
 ## Проект Brain Games / Фронтенд JS-программист
 ### Уровень: 1. Старт проекта 26 марта 2018
